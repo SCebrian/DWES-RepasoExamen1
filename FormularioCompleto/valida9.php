@@ -9,8 +9,6 @@
     *{
         margin: 0 auto;
     }
-    
-
     </style>
 
 </head>
@@ -20,13 +18,11 @@
     <?php
     // Creo una Variable que va ir recogiendo todos los errores de la validacion
     $errores=array();
-
     //Pregunta si está llegando una petición por POST, lo que significa que el usuario envió el formulario.
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
           //Comprobamos campo NOMBRECOMPLETO no nulo
           if(!empty($_POST['nombreCompleto'])) {
-
             $nombreCompleto = $_POST['nombreCompleto'];
             // Si es texto 
             if  (ctype_alpha($nombreCompleto)){
@@ -95,11 +91,7 @@
         } else $errores[]= "El nombre no puede ser vacío.";
     } else $errores[]= "Habido algún tipo de problema, por favor, reintentelo de nuevo.";
     
-    
-           
-
-
-            if(!empty($errores)){
+             if(!empty($errores)){
                 foreach ($errores as $value) {
                     print("<br><strong>ATENCIÓN</strong><br>".$value);
                 }
@@ -107,19 +99,6 @@
                 print("<h4> Su registro se ha completado con éxito.</h4>");
                 print("<h4><br>Sandra Cebrián 2º DAW-B</h4>");
             }
-
-
-
-       
-
-
-
-
-    
-
-
-
-
     ?>
         
 </body>
