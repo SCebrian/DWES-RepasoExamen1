@@ -44,7 +44,7 @@
             <input type="text" name="nombreCompleto" ></p>
 
             <p><label>Contraseña:</label><br>
-            <input type="pasword" name="contrasenya" ></p>
+            <input type="text" name="contrasenya" ></p>
 
             <p><label>Nivel de estudios:</label><br>
             <span>Sin estudios</span><input type="radio" name="estudios" value="Sin estudios">
