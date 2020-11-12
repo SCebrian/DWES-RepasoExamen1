@@ -1,0 +1,23 @@
+COPIAR Y PEGAR
+
+Apertura y cierre:
+  <?php ?>
+  
+Formulario básico HTML:
+   <fieldset style="width:30%">
+            <legend>Calcular</legend>
+            <form method='post' action="#ejercicio1">
+                <p>Introduzca numero: <input name='num1' type='text' ></p>
+                <label>Sumar</label>
+                <input type="radio" name="ejercicio1" value="sumar" >
+                <label>Producto</label>
+                <input type="radio" name="ejercicio1" value="producto">
+                <br>
+                <input type='submit' name='enviar1' />
+            </form>
+        </fieldset>
+        
+
+
+        
+
